@@ -1,0 +1,62 @@
+{% load static tailwind_tags %}
+
+<head>
+   {% tailwind_css %}
+</head>
+<body class="bg-gray-50">
+    <div class="mx-[150px]">
+        {% include 'tracker/navbar.html' %}
+    
+        <div class="flex justify-center mt-10 h-full">
+            <div class="bg-white shadow-md w-full h-[80%] rounded-lg p-10 flex flex-col">
+                <div class="bg-blue-600 p-7 rounded-lg">
+                    <h1 class="text-white text-3xl font-bold text-center">+234 7033547896 Number Detailed Information</h1>
+                </div>
+                <div class="flex w-full mt-3">
+                    <div class="w-full">
+                        <div class="flex justify-between text-2xl py-5 px-8 border-[2px] border-blue-500 mb-2">
+                            <h1 class="font-bold">Country:</h1>
+                            <h3 class="text-gray-500">Nigeria</h3>
+                        </div>
+                        <div class="flex justify-between text-2xl py-5 px-8 border-[2px] border-blue-500 mb-2">
+                            <h1 class="font-bold">Country Code:</h1>
+                            <h3 class="text-gray-500">+234</h3>
+                        </div>
+                        <div class="flex justify-between text-2xl py-5 px-8 border-[2px] border-blue-500 mb-2">
+                            <h1 class="font-bold">ISO Country Code:</h1>
+                            <h3 class="text-gray-500">NG</h3>
+                        </div>
+                        <div class="flex justify-between text-2xl py-5 px-8 border-[2px] border-blue-500 mb-2">
+                            <h1 class="font-bold">Time Zone:</h1>
+                            <h3 class="text-gray-500">Africa/Lagos</h3>
+                        </div>
+                    </div>
+
+                    <div class="w-full ml-3">
+                        <div class="flex justify-between text-2xl py-5 px-8 border-[2px] border-blue-500 mb-2">
+                            <h1 class="font-bold">Telecom Provider/Area:</h1>
+                            <h3 class="text-gray-500">MTN</h3>
+                        </div>
+                        <div class="flex justify-between text-2xl py-5 px-8 border-[2px] border-blue-500 mb-2">
+                            <h1 class="font-bold">Network Type:</h1>
+                            <h3 class="text-gray-500">MOBILE</h3>
+                        </div>
+                        <div class="flex justify-between text-2xl py-5 px-8 border-[2px] border-blue-500 mb-2">
+                            <h1 class="font-bold">Operator or Area Code:</h1>
+                            <h3 class="text-gray-500"><b>703</b> (3 Digit)</h3>
+                        </div>
+                        <div class="flex justify-between text-2xl py-5 px-8 border-[2px] border-blue-500 mb-2">
+                            <h1 class="font-bold">Subscriber’s Number:</h1>
+                            <h3 class="text-gray-500"><b>3547896</b> (7 Digit)</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="font-bold mt-5 py-5 px-8 self-center text-2xl bg-blue-600 text-white rounded-lg cursor-pointer
+                hover:text-blue-600 hover:bg-white border-[1px] border-blue-500">SEE LIVE LOCATION</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+{% include 'tracker/footer.html' %}
